@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Mini Project - RevoU</title>
-</head>
-<body>
-<script src="/js/script.js"></script>
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <div id="form" class="form">
+        <form action="" onsubmit="addTask(); return false;">
+          <input id="taskInput" type="text" placeholder="Add a new task" />
+          <input id="dateInput" type="date" placeholder="Due date" />
+          <button type="submit">Add</button>
+        </form>
+      </div>
+      <div class="action-btn">
+        <button class="filter-btn" onclick="filterByStatus()">Filter</button>
+        <button class="delete-btn">Delete All</button>
+      </div>
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>Task</th>
+              <th>Due Date</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="taskList">
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
 </html>
