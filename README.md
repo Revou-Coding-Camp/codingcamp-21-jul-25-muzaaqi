@@ -19,15 +19,7 @@ A modern, responsive Todo List application built with vanilla JavaScript and sty
 
 ## 🚀 Demo
 
-[Live Demo](your-demo-link-here) <!-- Add your deployed link here -->
-
-## 📸 Screenshots
-
-### Main Interface
-![Main Interface](screenshots/main-interface.png) <!-- Add screenshot -->
-
-### Task Filtering
-![Task Filtering](screenshots/task-filtering.png) <!-- Add screenshot -->
+[Live Demo]([your-demo-link-here](https://revou-coding-camp.github.io/codingcamp-21-jul-25-muzaaqi/)) <!-- Add your deployed link here -->
 
 ## 🛠️ Technologies Used
 
