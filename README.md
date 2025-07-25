@@ -64,11 +64,8 @@ A modern, responsive Todo List application built with vanilla JavaScript and sty
 codingcamp-21-jul-25-muzaaqi/
 │
 ├── index.html          # Main HTML file
-├── css/               # Stylesheets directory
 ├── js/
-│   ├── script.js      # Main JavaScript functionality
-│   └── scripttt.js    # Additional scripts
-├── screenshots/       # Project screenshots
+│   └── script.js      # Main JavaScript functionality
 └── README.md         # Project documentation
 ```
 
@@ -87,27 +84,6 @@ codingcamp-21-jul-25-muzaaqi/
 3. **Bulk Actions**
    - Use "Delete All" to remove all tasks at once
    - Filter between "All", "Completed", and "Uncompleted" tasks
-
-## 🔮 Future Enhancements
-
-- [ ] **Local Storage**: Persist tasks between browser sessions
-- [ ] **Task Categories**: Add category tags to organize tasks
-- [ ] **Due Date Notifications**: Alert users about upcoming deadlines
-- [ ] **Task Priority**: Add priority levels (High, Medium, Low)
-- [ ] **Search Functionality**: Search tasks by keywords
-- [ ] **Export/Import**: Export tasks to JSON or CSV format
-- [ ] **Dark Mode**: Toggle between light and dark themes
-- [ ] **Task Notes**: Add detailed descriptions to tasks
-
-## 🤝 Contributing
-
-Contributions are welcome! If you'd like to contribute to this project:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## 📝 Code Quality
 
