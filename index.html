@@ -3,37 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Mini Project - RevoU</title>
   </head>
-  <body>
-    <div class="container">
-      <div id="form" class="form">
-        <form action="" onsubmit="addTask(); return false;">
-          <input id="taskInput" type="text" placeholder="Add a new task" />
-          <input id="dateInput" type="date" placeholder="Due date" />
-          <button type="submit">Add</button>
-        </form>
+  <body
+    class="bg-gray-100 text-gray-900 min-h-screen flex flex-row items-center justify-center gap-8 p-4"
+  >
+    <div class="w-full max-w-2xl bg-white shadow-lg rounded-xl p-6 space-y-4">
+      <h1 class="text-3xl font-semibold text-center text-gray-800">
+        Todo List
+      </h1>
+
+      <form id="todo-form" class="flex gap-2">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Enter task..."
+          class="flex-1 border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-600"
+          required
+        />
+        <input
+          type="date"
+          id="dateInput"
+          class="border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-600"
+          required
+        />
+        <button
+          onclick="addTask()"
+          class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition"
+        >
+          +
+        </button>
+      </form>
+
+      <div class="flex justify-between items-center">
+        <select
+          id="filterSelection"
+          class="border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-600"
+        >
+          <option value="all">All</option>
+          <option value="done">Completed</option>
+          <option value="notdone">Uncompleted</option>
+        </select>
+        <button
+          id="deleteAllBtn"
+          class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition"
+        >
+          Delete All
+        </button>
       </div>
-      <div class="action-btn">
-        <button class="filter-btn" onclick="filterByStatus()">Filter</button>
-        <button class="delete-btn">Delete All</button>
-      </div>
-      <div>
-        <table>
-          <thead>
+
+      <div class="overflow-x-auto rounded-md">
+        <table class="min-w-full table-auto text-sm text-left">
+          <thead class="bg-gray-200 text-gray-700">
             <tr>
-              <th>Task</th>
-              <th>Due Date</th>
-              <th>Status</th>
-              <th>Actions</th>
+              <th class="px-4 py-2">Task</th>
+              <th class="px-4 py-2">Date</th>
+              <th class="px-4 py-2 text-center">Status</th>
+              <th class="px-4 py-2 text-center">Actions</th>
             </tr>
           </thead>
-          <tbody id="taskList">
+          <tbody id="taskList" class="divide-y divide-gray-200">
           </tbody>
         </table>
       </div>
     </div>
-    <script src="/js/script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
